@@ -6,12 +6,7 @@ import NewBoxForm from './NewBoxForm';
 
 const BoxList = () => {
     //an array of objects containing bcolor, width and height
-    const [boxes, setBoxes] = useState([{
-        id: uuid(),
-        bColor: "lavender",
-        width: 100,
-        height: 100
-    }]);
+    const [boxes, setBoxes] = useState([]);
 
     //remove a box from boxes based on its id
     const removeBox = (id) => {

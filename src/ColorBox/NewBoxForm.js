@@ -26,15 +26,17 @@ const NewBoxForm = ({ addBox }) => {
 
     return (
         <form className='boxForm' onSubmit={handleSubmit}>
-            <label htmlFor='bColor'>Color : </label>
+            <label htmlFor='bColor'>Color:</label>
             <input
+                id='bColor'
                 name='bColor'
                 type='color'
                 value={formData.bColor}
                 onChange={handleChange}
             />
-            <label htmlFor='width'>Width : </label>
+            <label htmlFor='width'>Width:</label>
             <input
+                id='width'
                 name='width'
                 type='number'
                 min={1}
@@ -42,8 +44,9 @@ const NewBoxForm = ({ addBox }) => {
                 value={formData.width}
                 onChange={handleChange}
             />
-            <label htmlFor='height'>Height : </label>
+            <label htmlFor='height'>Height:</label>
             <input
+                id='height'
                 name='height'
                 type='number'
                 min={1}
@@ -51,7 +54,7 @@ const NewBoxForm = ({ addBox }) => {
                 value={formData.height}
                 onChange={handleChange}
             />
-            <input type='submit' value='Create' />
+            <button>Create</button>
         </form>
     )
 };
