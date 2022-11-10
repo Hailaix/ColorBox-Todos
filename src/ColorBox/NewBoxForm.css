@@ -1,0 +1,9 @@
+.boxForm {
+    background-color: lightgray;
+}
+.boxForm input {
+    margin: 8px;
+}
+.boxForm label {
+    margin: 8px;
+}
